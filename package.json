@@ -27,8 +27,8 @@
     "test-exclude-uncompressed": "set EXCLUDE_UNCOMPRESSED=true&& karma start",
     "test-browser-exclude-uncompressed": "set EXCLUDE_UNCOMPRESSED=true&& karma start --single-run",
     "test-node-exclude-uncompressed": "set EXCLUDE_UNCOMPRESSED=true&& npm run test-node",
-	"start": "node ./build/commonjs/index.js",
-	"start": "node npm",
+	"build": "npm i ./examples/examples-browser/",
+	"start": "node ./exmaples/examples-browser/server.js",
     "docs": "typedoc --options ./typedoc.config.js ./src"
   },
   "keywords": [
