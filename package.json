@@ -1,5 +1,5 @@
 {
-  "name": "Face-Node",
+  "name": "face-api.js",
   "version": "0.21.0",
   "description": "JavaScript API for face detection and face recognition in the browser with tensorflow.js",
   "module": "./build/es6/index.js",
@@ -28,6 +28,7 @@
     "test-browser-exclude-uncompressed": "set EXCLUDE_UNCOMPRESSED=true&& karma start --single-run",
     "test-node-exclude-uncompressed": "set EXCLUDE_UNCOMPRESSED=true&& npm run test-node",
 	"start": "node ./build/commonjs/index.js",
+	"start": "node ./examples/examples-browser/server.js"
     "docs": "typedoc --options ./typedoc.config.js ./src"
   },
   "keywords": [
@@ -42,7 +43,8 @@
   "dependencies": {
     "@tensorflow/tfjs-core": "1.2.9",
     "tfjs-image-recognition-base": "^0.6.2",
-    "tslib": "^1.10.0"
+    "tslib": "^1.10.0",
+	"express": "^4.16.4"
   },
   "devDependencies": {
     "@tensorflow/tfjs-node": "^1.2.9",
