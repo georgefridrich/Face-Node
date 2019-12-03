@@ -8,7 +8,7 @@ async function run() {
   await faceapi.nets.faceLandmark68Net.loadFromDisk('../../weights')
   await faceapi.nets.ageGenderNet.loadFromDisk('../../weights')
 
-  const img = await canvas.loadImage('../images/bbt1.jpg')
+  const img = await canvas.loadImage('../images/team_manila.jpg')
   const results = await faceapi.detectAllFaces(img, faceDetectionOptions)
     .withFaceLandmarks()
     .withAgeAndGender()
