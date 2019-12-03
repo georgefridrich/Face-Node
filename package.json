@@ -44,7 +44,8 @@
     "@tensorflow/tfjs-core": "1.2.9",
     "tfjs-image-recognition-base": "^0.6.2",
     "tslib": "^1.10.0",
-	"express": "^4.16.4"
+	"express": "^4.16.4",
+	"request": "^2.88.0"
   },
   "devDependencies": {
     "@tensorflow/tfjs-node": "^1.2.9",
