@@ -11,7 +11,7 @@ async function loadImageFromUrl(url) {
 }
 
 function renderImageSelectList(selectListId, onChange, initialValue, withFaceExpressionImages) {
-  let images = [1, 2, 3, 4, 5, 6].map(idx => `bbt${idx}.jpg`)
+  let images = [1, 2, 3, 4, 5, 6].map(idx => `bbt${idx}.jpg` || `bbt${idx}.png`)
 
   if (withFaceExpressionImages) {
     images = [
