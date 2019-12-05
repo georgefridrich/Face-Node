@@ -43,7 +43,7 @@ function renderImageSelectList(selectListId, onChange, initialValue, withFaceExp
   )
 }
 
-function initImageSelectionControls(initialValue = 'bbt6.jpg', withFaceExpressionImages = false) {
+function initImageSelectionControls(initialValue = 'bbt1.jpg', withFaceExpressionImages = false) {
   renderImageSelectList(
     '#selectList',
     async (uri) => {
